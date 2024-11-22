@@ -23,7 +23,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Recipe Page](https://recipe-page-jswzkv7fd-korizsts-projects.vercel.app)
 
 ## My process
 
