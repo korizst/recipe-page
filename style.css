@@ -1,3 +1,5 @@
+/* --- FONTS --- */
+
 @font-face {
   font-family: "Young Serif";
   src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf');
@@ -22,6 +24,8 @@
   font-weight: 700;
 }
 
+/* --- COLORS, BOX MODEL --- */
+
 :root {
   --white: hsl(0, 0%, 100%);
   --stone-100: hsl(30, 54%, 90%);
@@ -40,11 +44,161 @@
   color: var(--stone-600);
 }
 
-.attribution {
+/* --- GENERAL CSS --- */
+
+body {
+  font-family: "Outfit";
+  background-color: var(--stone-100);
+}
+
+h2 {
+  font-family: "Young Serif";
+  font-size: 1.6rem;
+  color: var(--brown-800);
+  margin-bottom: 1.5rem;
+}
+
+ul, ol {
+  padding-left: .3rem;
+}
+
+ul li, ol li {
+  line-height: 2;
+  margin-left: 1rem;
+  padding-left: 1rem;
+}
+
+ul li::marker, ol li::marker {
+  color: var(--brown-800);
+}
+
+ol li::marker {
+  font-weight: bold;
+}
+
+hr {
+  border-top: 1px solid var(--stone-150);
+  width: 100%;
+}
+
+.wrapper {
+  background-color: white;
+  max-width: 375px;
+  margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    max-width: 616px;
+    margin: 3rem auto;
+    border-radius: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .wrapper {
+    max-width: 736px;
+  }
+}
+
+/* --- HEADER --- */
+
+@media only screen and (min-width: 768px) {
+  .header {
+    padding: 2rem;
+  }
+
+  .header--image {
+    border-radius: .75rem;
+  }
+}
+
+.header--image {
+  display: block;
+  width: 100%;
+}
+
+/* --- MAIN --- */
+
+.main {
+  padding: 2rem;
+}
+
+.main-hr {
+  margin: 2rem 0;
+}
+
+/* Title */
+
+.title--heading {
+  color: var(--stone-900);
+  font-family: "Young Serif";
+  font-size: 2.2rem;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.title--paragraph {
+  font-family: "Outfit";
+}
+
+/* Preparation */
+
+.preparation {
+  background-color: var(--rose-50);
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.preparation--heading {
+  color: var(--rose-800);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Nutrition */
+
+.nutrition--paragraph {
+  text-shadow: 0 .25rem .25rem rgba(0, 0, 0, .25);
+}
+
+table {
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+td {
+  padding-left: 1.5rem;
+  
+}
+
+th {
+  padding-right: 1.5rem;
+  text-align: left;
+  color: var(--brown-800);
+}
+
+.table-hr {
+  margin: .75rem 0;
+}
+
+/* --- FOOTER --- */
+
+.footer {
+  padding-bottom: 2rem;
+}
+
+.footer--attribution {
   font-size: 11px;
   text-align: center;
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
+.footer--attribution a {
+  color: var(--brown-800);
+  text-decoration: none;
+}
+
+.footer--attribution a:hover {
+  text-decoration: underline;
 }
